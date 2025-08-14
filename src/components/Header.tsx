@@ -104,7 +104,7 @@ const Header: React.FC = () => {
             className="rainbow-button-glow rounded-md font-semibold text-center max-w-[320px] md:max-w-none"
             onClick={handleExplosionClick}
           >
-            Speak to Geronimo
+            Native American Time Machine
           </NavLink>
           <NavLink href="#faq" onClick={closeMenu} rainbow>FAQ</NavLink>
           <NavLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>Black History Time Machine</NavLink>

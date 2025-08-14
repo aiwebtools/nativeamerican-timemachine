@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                   className="max-w-[300px] md:max-w-none"
                   onClick={handleExplosionClick}
                 >
-                  Speak to Geronimo
+                  Native American Time Machine
                 </FooterLink>
               </li>
               <li>
