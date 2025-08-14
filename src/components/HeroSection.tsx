@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-light-gray mb-6">
-              Experience the most advanced AI tools for historical exploration. Our cutting-edge AI time machine brings Native American history to life with Geronimo, Chief of Rainbow Apache Destiny as your guide. Discover authentic stories, cultures, and wisdom from the past—or explore possible futures shaped by your choices.
+              Break free from historical limitations and discover the liberating truth of Native American heritage. Our revolutionary AI time machine unveils authentic stories that have been silenced for centuries. Experience the wisdom and resilience that can guide us toward justice and healing. The truth of the past will set us free and provide the moral compass needed for the transformative change our world desperately needs.
             </p>
             
             <div className="mb-6 p-4 bg-primary-purple/10 rounded-lg border border-primary-purple/20">

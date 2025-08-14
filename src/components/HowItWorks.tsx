@@ -14,33 +14,33 @@ const HowItWorks: React.FC = () => {
   const steps = [
     {
       icon: <CalendarClock className="w-12 h-12 text-primary-purple" />,
-      title: "Choose Your Time",
-      description: "Select any year in Native American history you wish to explore."
+      title: "Uncover Hidden Truths",
+      description: "Select any era to discover authentic stories that challenge mainstream narratives and reveal suppressed indigenous wisdom."
     },
     {
       icon: <MapPin className="w-12 h-12 text-primary-purple" />,
-      title: "Select Your Location",
-      description: "Specify which tribal land or region you want to visit."
+      title: "Connect With Sacred Lands",
+      description: "Experience the spiritual significance of tribal territories and understand how connection to land shapes identity and resistance."
     },
     {
       icon: <Zap className="w-12 h-12 text-primary-purple" />,
-      title: "Time Travel Sequence",
-      description: "Experience a sacred teleportation ritual to your chosen time and place."
+      title: "Break Through Barriers",
+      description: "Experience a transformative journey that shatters historical misconceptions and opens your mind to authentic indigenous perspectives."
     },
     {
       icon: <BookOpen className="w-12 h-12 text-primary-purple" />,
-      title: "Immersive Storytelling",
-      description: "Receive detailed, historically accurate narratives about your surroundings."
+      title: "Truth as Liberation",
+      description: "Absorb historically accurate narratives that expose injustices while revealing the strength, wisdom, and resilience that survived oppression."
     },
     {
       icon: <Image className="w-12 h-12 text-primary-purple" />,
-      title: "Visual Experience",
-      description: "See photorealistic images of your historical environment."
+      title: "Witness the Untold",
+      description: "See powerful visual representations that bring silenced histories to life and challenge the sanitized versions you were taught."
     },
     {
       icon: <Shuffle className="w-12 h-12 text-primary-purple" />,
-      title: "Continue Your Journey",
-      description: "Choose from suggestions to further explore the time period."
+      title: "Chart a New Course",
+      description: "Apply the moral compass gained from authentic history to envision and create the just, equitable future our ancestors would want us to build."
     }
   ];
 
@@ -52,7 +52,7 @@ const HowItWorks: React.FC = () => {
         </h2>
         
         <p className="text-center text-light-gray max-w-3xl mx-auto mb-16">
-          Embark on a spiritual journey through time with our Native American History Time Machine. Follow these steps to begin your adventure.
+          Liberation through understanding. Embark on a transformative journey that reveals suppressed truths and forgotten wisdom. Each step connects you to authentic indigenous knowledge that can guide our path toward justice, healing, and meaningful change in our modern world.
         </p>
         
         <div className="relative">

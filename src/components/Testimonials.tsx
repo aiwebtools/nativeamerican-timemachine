@@ -7,25 +7,25 @@ const Testimonials: React.FC = () => {
     {
       name: "Sarah J.",
       role: "History Teacher",
-      quote: "The Native American History Time Machine has transformed how I teach indigenous history. My students are far more engaged when they can 'experience' historical events through this immersive storytelling.",
+      quote: "This tool shattered everything I thought I knew about indigenous history. The authentic stories revealed truths that textbooks censored. My students now understand how historical lies maintain injustice and how truth empowers change.",
       stars: 5
     },
     {
       name: "Michael T.",
       role: "Cultural Researcher",
-      quote: "The historical accuracy and attention to detail is impressive. I've studied Native American cultures for years, and this tool provides insights that bring forgotten stories to life.",
+      quote: "Finally, an honest portrayal of indigenous resistance and survival. This doesn't romanticize or sanitize—it shows the brutal reality and the extraordinary resilience. Truth like this is what sets us free to build a better world.",
       stars: 5
     },
     {
       name: "Elena R.",
       role: "Student",
-      quote: "I was struggling with my Native American studies course until I found this. Being able to 'visit' different time periods makes learning so much more interesting and meaningful.",
+      quote: "I was raised on false narratives about 'discovery' and 'civilization.' This experience opened my eyes to genocide, resistance, and survival. Now I have the moral compass to challenge racism and fight for justice.",
       stars: 4
     },
     {
       name: "David K.",
       role: "History Enthusiast",
-      quote: "The Future Tests are mind-blowing! They really make you think about how today's choices affect tomorrow. The storytelling feels authentic and respectful of Native cultures.",
+      quote: "The future scenarios based on indigenous wisdom show what healing looks like. It's not just about learning the past—it's about applying ancestral knowledge to solve today's crises and create regenerative change.",
       stars: 5
     }
   ];
@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
         </h2>
         
         <p className="text-center text-light-gray max-w-3xl mx-auto mb-12">
-          Hear from those who have journeyed through Native American history with the Cherokee Chief of Destiny.
+          Discover how truth liberates minds and transforms perspectives. Hear from those who have experienced the awakening power of authentic Native American history and found their moral compass for creating meaningful change.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
