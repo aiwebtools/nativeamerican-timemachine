@@ -7,6 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Disclaimer from '@/components/Disclaimer';
+import RecommendedTools from '@/components/RecommendedTools';
 import DreamCatcher from '@/components/DreamCatcher';
 import RainbowElement from '@/components/RainbowElement';
 
@@ -59,10 +60,11 @@ const Index = () => {
         />
         
         <HeroSection />
-        <HowItWorks />
-        <Testimonials />
-        <FAQ />
-        <Disclaimer />
+          <HowItWorks />
+          <Testimonials />
+          <RecommendedTools />
+          <FAQ />
+          <Disclaimer />
       </main>
       <Footer />
     </div>

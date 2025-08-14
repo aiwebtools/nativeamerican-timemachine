@@ -81,8 +81,8 @@ const Footer: React.FC = () => {
                 </FooterLink>
               </li>
               <li>
-                <FooterLink href="#disclaimer" rainbow>
-                  Disclaimer
+                <FooterLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" external rainbow>
+                  Black History Time Machine
                 </FooterLink>
               </li>
               <li>
