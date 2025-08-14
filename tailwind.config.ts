@@ -73,6 +73,9 @@ export default {
 				'light-gray': '#C8C8C9',
 				'black': '#000000',
 			},
+			fontFamily: {
+				'cursive': ['Dancing Script', 'cursive'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

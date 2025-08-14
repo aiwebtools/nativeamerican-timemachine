@@ -63,6 +63,13 @@ const Disclaimer: React.FC = () => {
               <p className="text-center text-light-gray/80 font-medium">
                 For informational, educational, and research purposes only.
               </p>
+              
+              {/* Signature */}
+              <div className="mt-8 text-right">
+                <p className="text-primary-purple/80 text-2xl font-cursive italic opacity-90">
+                  Sincerely, Pahana
+                </p>
+              </div>
             </div>
           </div>
         </div>
