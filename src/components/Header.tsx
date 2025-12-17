@@ -104,10 +104,10 @@ const Header: React.FC = () => {
             className="rainbow-button-glow rounded-md font-semibold text-center max-w-[320px] md:max-w-none"
             onClick={handleExplosionClick}
           >
-            Native American Time Machine
+            Native American GPT
           </NavLink>
           <NavLink href="https://chatgpt.com/g/g-6942c94dcb08819191863b6d35161f09-time-machine-of-unwritten-history-gpt" onClick={closeMenu} rainbow>Unwritten History GPT</NavLink>
-          <NavLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>Black History Time Machine</NavLink>
+          <NavLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>Black History GPT</NavLink>
           <NavLink href="https://time-machine-gpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>
             Time Machine GPT
           </NavLink>
