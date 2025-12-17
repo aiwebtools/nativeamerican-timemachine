@@ -109,7 +109,7 @@ const Header: React.FC = () => {
           <NavLink href="https://chatgpt.com/g/g-6942c94dcb08819191863b6d35161f09-time-machine-of-unwritten-history-gpt" onClick={closeMenu} rainbow>Unwritten History GPT</NavLink>
           <NavLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>Black History GPT</NavLink>
           <NavLink href="https://time-machine-gpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>
-            Time Machine GPT
+            THE ORIGINAL TIME MACHINE GPT
           </NavLink>
           <NavLink href="https://www.aiwebtools.ai" onClick={closeMenu} rainbow>More AI Tools</NavLink>
         </nav>
