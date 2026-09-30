@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
+import TimePortal from '@/components/TimePortal';
 
 // Lazy load below-the-fold components
 const HowItWorks = lazy(() => import('@/components/HowItWorks'));
@@ -70,6 +71,7 @@ const Index = () => {
         </Suspense>
         
         <HeroSection />
+        <TimePortal />
         
         <Suspense fallback={<LoadingFallback />}>
           <HowItWorks />
