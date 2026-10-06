@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import DreamCatcher from './DreamCatcher';
 import VideoSection from './VideoSection';
 import DreamCatcherExplosion from './DreamCatcherExplosion';
+import { Button } from './ui/button';
 
 const HeroSection: React.FC = () => {
   const [showExplosion, setShowExplosion] = useState(false);
@@ -40,11 +41,11 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="rainbow-text-glow bg-gradient-to-r from-primary-purple via-vivid-purple to-bright-blue bg-clip-text">
                 AI-Powered Journey Through Native American History
               </span>
-            </h1>
+            </h2>
             
             <p className="text-lg md:text-xl text-light-gray mb-6">
               Break free from historical limitations and discover the liberating truth of Native American heritage. Our revolutionary AI time machine unveils authentic stories that have been silenced for centuries. Experience the wisdom and resilience that can guide us toward justice and healing. The truth of the past will set us free and provide the moral compass needed for the transformative change our world desperately needs.
@@ -57,13 +58,12 @@ const HeroSection: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 mb-12">
-              <a 
-                href="#" 
-                className="rainbow-button-glow text-white px-8 py-4 rounded-md font-semibold flex items-center justify-center gap-2 text-lg"
-                onClick={handleJourneyButtonClick}
-              >
-                Try Our AI Time Machine Tool <ArrowRight size={20} />
-              </a>
+              <Button asChild className="rainbow-button-glow h-auto whitespace-normal px-8 py-4 text-lg">
+                <a href="#time-portal">Use Native American GPT Here <ArrowRight size={20} /></a>
+              </Button>
+              <Button asChild variant="outline" className="h-auto whitespace-normal px-8 py-4 text-lg">
+                <a href="https://chatgpt.com/g/g-67f5b059be608191a9faa94c7d8dfb81-native-american-history-time-machine-of-destiny" target="_blank" rel="noopener noreferrer" onClick={handleJourneyButtonClick}>Chat TPT version</a>
+              </Button>
               
               <a 
                 href="#how-it-works" 

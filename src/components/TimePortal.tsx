@@ -147,16 +147,16 @@ const TimePortal: React.FC = () => {
   };
 
   return (
-    <section id="time-portal" className="relative py-12 md:py-16">
+    <section id="time-portal" aria-label="Native American history time portal" className="relative pt-6 pb-12 md:pt-8 md:pb-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-3">
-          <span className="rainbow-text-glow">Enter the Time Portal</span>
-        </h2>
-        <p className="text-center text-light-gray/80 mb-8 max-w-2xl mx-auto">
-          Walk beside Geronimo, Chief of Rainbow Apache Destiny, and experience Native American history first-hand — with a painted vision of every place you arrive.
+        <h1 className="text-2xl md:text-4xl font-bold text-center mb-3">
+          <span className="rainbow-text-glow">Native American History Time Machine GPT</span>
+        </h1>
+        <p className="text-center text-light-gray/80 mb-5 max-w-2xl mx-auto">
+          Geronimo, Chief of Rainbow Apache Destiny
         </p>
 
-        <div className="cyberpunk-card rainbow-dreamcatcher-border flex flex-col md:flex-row h-[80vh] md:h-[720px] overflow-hidden bg-black/70">
+        <div className="cyberpunk-card rainbow-dreamcatcher-border portal-workspace flex flex-col md:flex-row overflow-hidden bg-black/70">
           {/* Journeys list */}
           <aside className="md:w-60 border-b md:border-b-0 md:border-r border-primary-purple/30 p-3 flex md:flex-col gap-2 overflow-x-auto md:overflow-y-auto shrink-0">
             <button onClick={startNew} className="rainbow-button-glow text-white rounded-md px-3 py-2 text-sm font-semibold flex items-center gap-2 shrink-0">
@@ -225,6 +225,7 @@ const TimePortal: React.FC = () => {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } }}
                 rows={2}
+                aria-label="Time travel destination or message"
                 placeholder="e.g. 1876, Black Hills — Lakota lands…"
                 className="flex-1 resize-none rounded-md bg-black/60 border border-primary-purple/40 px-3 py-2 text-white placeholder:text-light-gray/50 focus:outline-none focus:border-primary-purple"
               />

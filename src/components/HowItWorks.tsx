@@ -92,9 +92,7 @@ const HowItWorks: React.FC = () => {
         
         <div className="mt-16 text-center">
           <a 
-            href="https://chatgpt.com/g/g-67f5b059be608191a9faa94c7d8dfb81-native-american-history-time-machine-of-destiny" 
-            target="_blank" 
-            rel="noopener noreferrer"
+            href="#time-portal"
             className="rainbow-button-glow text-black font-semibold inline-flex items-center gap-2 relative overflow-hidden px-8 py-4 rounded-md"
             style={{
               background: "linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff)",

@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Button } from './ui/button';
 import Logo from './Logo';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -11,7 +11,7 @@ interface NavLinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
-  onClick?: (e?: React.MouseEvent) => void;  // Updated to accept an optional event parameter
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
   rainbow?: boolean;
 }
 
@@ -55,6 +55,17 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showExplosion, setShowExplosion] = useState(false);
   const isMobile = useIsMobile();
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const observer = new ResizeObserver(() => {
+      document.documentElement.style.setProperty('--site-header-height', `${header.offsetHeight}px`);
+    });
+    observer.observe(header);
+    return () => observer.disconnect();
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -75,7 +86,7 @@ const Header: React.FC = () => {
   };
   
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/80 border-b border-primary-purple/20 py-4 shadow-md">
+    <header ref={headerRef} className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/80 border-b border-primary-purple/20 py-4 shadow-md">
       {/* Dream catcher explosion effect */}
       <DreamCatcherExplosion isActive={showExplosion} onComplete={handleExplosionComplete} />
       
@@ -85,26 +96,30 @@ const Header: React.FC = () => {
             <Logo className="transform scale-90 md:scale-100" />
           </div>
           {isMobile && (
-            <button 
+            <Button variant="ghost" size="icon"
               className="text-light-gray absolute right-4 top-4 p-2 focus:outline-none" 
               onClick={toggleMenu}
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            </Button>
           )}
         </div>
         
         <nav className={cn(
-          "flex flex-col md:flex-row w-full md:w-auto justify-center gap-2",
+          "flex flex-col md:flex-row md:flex-wrap w-full md:w-auto justify-center gap-2",
           isMobile && !isMenuOpen ? "hidden" : "mt-4 md:mt-0"
         )}>
+          <Button asChild className="rainbow-button-glow h-auto whitespace-normal text-center" >
+            <a href="#time-portal" onClick={closeMenu}>Native American GPT</a>
+          </Button>
           <NavLink 
             href="https://chatgpt.com/g/g-67f5b059be608191a9faa94c7d8dfb81-native-american-history-time-machine-of-destiny"
             className="rainbow-button-glow rounded-md font-semibold text-center max-w-[320px] md:max-w-none"
             onClick={handleExplosionClick}
           >
-            Native American GPT
+            Chat TPT version
           </NavLink>
           <NavLink href="https://chatgpt.com/g/g-6942c94dcb08819191863b6d35161f09-time-machine-of-unwritten-history-gpt" onClick={closeMenu} rainbow>Unwritten History GPT</NavLink>
           <NavLink href="https://blackhistorymattersgpt.lovable.app/?via=aiwebtools" onClick={closeMenu} rainbow>Black History GPT</NavLink>
