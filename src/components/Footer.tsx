@@ -70,6 +70,11 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold text-primary-purple mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
+                <Button asChild className="rainbow-button-glow w-full h-auto py-3 whitespace-normal">
+                  <a href="#time-portal">Use Native American GPT Here</a>
+                </Button>
+              </li>
+              <li>
                 <FooterLink 
                   href="https://chatgpt.com/g/g-67f5b059be608191a9faa94c7d8dfb81-native-american-history-time-machine-of-destiny"
                   external
@@ -77,7 +82,7 @@ const Footer: React.FC = () => {
                   className="max-w-[300px] md:max-w-none"
                   onClick={handleExplosionClick}
                 >
-                  Native American Time Machine
+                  Chat TPT version
                 </FooterLink>
               </li>
               <li>

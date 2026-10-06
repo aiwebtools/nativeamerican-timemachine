@@ -24,7 +24,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col overflow-hidden">
       <Header />
-      <main className="flex-grow relative pt-16 md:pt-20">
+      <main className="flex-grow relative main-with-header">
         {/* Decorative Dream Catchers - Lazy loaded */}
         <Suspense fallback={null}>
           <DreamCatcher 
@@ -70,8 +70,8 @@ const Index = () => {
           />
         </Suspense>
         
-        <HeroSection />
         <TimePortal />
+        <HeroSection />
         
         <Suspense fallback={<LoadingFallback />}>
           <HowItWorks />

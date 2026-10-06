@@ -41,6 +41,23 @@
   html {
     @apply scroll-smooth;
   }
+
+  .main-with-header {
+    padding-top: var(--site-header-height, 180px);
+  }
+
+  #time-portal {
+    scroll-margin-top: calc(var(--site-header-height, 180px) + 12px);
+  }
+
+  .portal-workspace {
+    height: max(380px, calc(100svh - var(--site-header-height, 180px) - 190px));
+    max-height: 780px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
 }
 
 @layer utilities {
